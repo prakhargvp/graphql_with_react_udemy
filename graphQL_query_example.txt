@@ -34,4 +34,28 @@ fragment compnayDetails on Company {
   description
 }
 
+# Mutation
+mutation {
+  addUser(firstName: "Stephen", age:26) {
+    id
+    firstName
+    age
+  }
+}
+
+# Mutation
+mutation {
+  deleteUser(id: "o8hMcsx") {
+    id
+  }
+}
+
+# Mutation
+mutation {
+  editUser(id:"1", firstName:"prakhar", age: 21){
+    id,
+    firstName,
+    age
+  }
+}
 
