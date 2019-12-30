@@ -1,7 +1,31 @@
+body {
+	background: #ede7f6;	
+}
+h1 {
+    color: #6a1b9a;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.back {
+	display: flex;
+    padding: 10px 0px;
+    color: #9575cd;
+}
 .collection-item {
 	display: flex;
 	justify-content: space-between;
+	border-bottom: 1px solid #9575cd !important;
+	color: #6a1b9a;
+    text-transform: capitalize;
+    transition: all .4s ease;
 }
+.collection-item:hover {
+	background: #9575cd;
+    color: #fff;
+}
+.collection-item a{ color: #311b92; }
+.collection-item:hover a{ color: #fff; }
 
 .material-icons {
 	cursor: pointer;
