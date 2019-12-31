@@ -13,7 +13,10 @@ class SongDetail extends Component {
 
 		return (
 			<div>
-				<Link to="/">Back</Link>
+				<Link to="/" className="back">
+					<i className="material-icons">keyboard_backspace</i>
+					Back
+				</Link>
 				<h1>{this.props.data.song.title}</h1>
 				<LyricList lyrics={song.lyrics} />
 				<LyricCreate songId={this.props.params.id} />

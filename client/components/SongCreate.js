@@ -24,15 +24,20 @@ class SongCreate extends Component {
 		console.log(this.props);
 		return (
 			<div>
-				<Link to="/">Back</Link>
-				<h3>Create A New Song</h3>
+				<Link to="/" className="back">
+					<i className="material-icons">keyboard_backspace</i>
+					Back
+				</Link>
+				<h1>Create A New Song</h1>
 				<form onSubmit={this.onSubmit.bind(this)}>
 					<label>Song Title:</label>
 					<input 
 					onChange={event => this.setState({ title: event.target.value })} 
 					value={this.state.title}
 					/>
-					<button>Submit</button>
+					<button className="btn waves-effect waves-light purple darken-3">
+						Submit
+					</button>
 				</form>
 			</div>
 		);

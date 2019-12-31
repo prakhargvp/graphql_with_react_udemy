@@ -24,11 +24,12 @@ class SongList extends Component{
 		));
 	}
 	render() {
-
+		
 		if(this.props.data.loading) { return <div>Loading....</div>; }
 
 		return (
 			<div>
+				<h1> Songs </h1>
 				<ul className="collection">
 					{this.renderSongs()}
 				</ul>
