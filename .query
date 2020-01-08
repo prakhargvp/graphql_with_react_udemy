@@ -1,0 +1,11 @@
+mutation {
+  signup(email: "test@test.com", password: "password") {
+    email
+  }
+}
+
+mutation {
+  logout {
+    email
+  }
+}
